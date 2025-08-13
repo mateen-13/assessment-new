@@ -531,8 +531,7 @@ export default function MonthPlanner() {
                   </label>
                   <input
                     type="date"
-                    className="w-full px-3 py-2 border rounded-md"
-                    value={editingTask?.startDate || ""}
+className="w-full px-3 bg-gray-300 py-2 border rounded-md text-black [&::-webkit-calendar-picker-indicator]:filter-none [&::-webkit-calendar-picker-indicator]:invert-0"                    value={editingTask?.startDate || ""}
                     onChange={(e) =>
                       setEditingTask({
                         ...editingTask,
@@ -548,7 +547,7 @@ export default function MonthPlanner() {
                   </label>
                   <input
                     type="date"
-                    className="w-full px-3 py-2 border rounded-md"
+                    className="w-full px-3 bg-gray-300 py-2 border rounded-md text-black [&::-webkit-calendar-picker-indicator]:filter-none [&::-webkit-calendar-picker-indicator]:invert-0"
                     value={editingTask?.endDate || ""}
                     onChange={(e) =>
                       setEditingTask({
